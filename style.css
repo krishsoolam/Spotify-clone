@@ -1,0 +1,319 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0.5rem;
+    background-color: black;
+    overflow: hidden;
+}
+.gridcontainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 85vh 12vh;
+    gap: 0.5rem;
+}
+#sidebar{
+    grid-column: 1/2;
+}
+#main{
+    overflow: auto;
+    background-color: #090909;
+    background-image: linear-gradient(135deg, #090909 0%, #131313 100%);
+    grid-column: 2/5;
+    border-radius: 1rem;
+}
+#media{
+    background-color: #090909;
+    background-image: linear-gradient(135deg, #090909 0%, #131313 100%);
+    grid-column: 1/5;
+    overflow: hidden;
+}
+.nav{
+    background-color: #090909;
+    background-image: linear-gradient(135deg, #090909 0%, #131313 100%);
+    border-radius: 1rem;
+    height: 100px;
+    padding: 1.5rem ;
+}
+.brand i{
+    font-size: 1.5rem;
+    color: white;
+}
+.brand a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    position: relative;
+    bottom: 5px;
+}
+.home{
+    margin: 1.5rem 0 0 0;
+}
+.home i{
+    color: white;
+    font-size: 1.1rem;
+}
+.home a{
+    color: white;
+    font-weight: 600;
+    padding: 0 0 0 1rem;
+}
+.search{
+    margin: 1.2rem 0 0 0;
+    opacity: 0.5;
+}
+.search:hover{
+    opacity: 1;
+}
+.search i{
+    color: white;
+    font-size: 1.2rem;
+}
+.search a{
+    color: white;
+    font-weight: 600;
+    padding: 0 0 0 1.2rem;
+}
+.search :hover{
+    opacity: 1;
+}
+.library{
+    height: 340px;
+    background-color: #090909;
+    background-image: linear-gradient(135deg, #090909 0%, #131313 100%);
+    border-radius: 1rem;
+    margin: 0.5rem 0 0 0;
+    padding: 0.5rem;
+    
+}
+.option{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.lib-option{
+    opacity: 0.5;
+}
+.lib-option:hover{
+    opacity: 1;
+}
+.lib-option img{
+    height: 1.25rem;
+    width: 1.24rem;
+}
+.lib-option a{
+    color: white;
+    font-weight: 500;
+    margin: 0 0 0 0.2rem;
+    position: relative;
+    bottom: 3px;
+}
+.lib-box{
+    height: 110px;
+    border-radius: 1rem;
+    color: white;
+    line-height: 2rem;
+    padding: 0.5rem 0 0 1.5rem;
+    background-color: #1a1a1a;
+    background-image: linear-gradient(135deg, #1a1a1a 0%, #202020 100%);
+}
+.p1{
+    font-weight: 500;
+}
+.p2{
+    font-size: 15px;
+    opacity: 0.8;
+}
+.lib-btn button{
+    border-radius: 1rem;
+    border: 0;
+    background: white;
+    width: 120px;
+    height: 30px;
+    font-weight: 600;
+}
+.lib-btn button:hover{
+    scale: 1.1;
+    transition: 0.5s;
+}
+.lib-box2{
+    background-color: #1a1a1a;
+    background-image: linear-gradient(135deg, #1a1a1a 0%, #202020 100%);
+    color: white;
+    height: 150px;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0 0 1.5rem;
+    line-height: 1.5rem;
+}
+.lib-btn2 button{
+    border-radius: 1rem;
+    border: 0;
+    background: white;
+    width: 130px;
+    height: 30px;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+.lib-btn2 button:hover{
+    scale: 1.1;
+    transition: 0.3s;
+}
+.main-nav{
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #090909;
+    background-image: linear-gradient(135deg, #090909 0%, #131313 100%);
+}
+.mncon1 i{
+    font-size: 1.3rem;
+    opacity: 0.5;
+    margin-left: 0.5rem;
+}
+.mncon1 :first-child:hover{
+    opacity: 1;
+}
+.mncon1 :last-child:hover{
+    opacity: 1;
+}
+.mncon2 button{
+    background: white;
+    border: 0;
+    border-radius: 1rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    font-weight: 500;
+}
+.mncon2 button:hover{
+    scale: 1.1;
+    transition: 0.2s;
+}
+.mncon2 :last-child{
+    margin: 0 0.5rem 0 1rem ;
+}
+.cards-con{
+    padding: 1rem;
+    color: white;
+}
+.card{
+    width: 180px;
+    height: 260px;
+    background-color: #131313;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+}
+.card img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title{
+    padding: 0.5rem 0 0.5rem 0;
+    font-weight: 600;
+}
+.card-p{
+    font-size: 12px;
+    opacity: 0.7;
+}
+.card:hover{
+    background-color: #1A1A1A;
+}
+.card-con2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.media-con{
+    height: 100%;
+    display: flex;
+}
+.album{
+    width: 25%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.album img {
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem;
+}
+.album-details :first-child{
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.album-details :last-child{
+    color: white;
+    font-size: 0.7rem;
+}
+.controls{
+    width: 50%;
+    height: 100%;
+}
+
+.controls-con{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 0.3rem;
+}
+.controls-con i{
+    margin-right: 1rem;
+}
+.controls-con :nth-child(2) {
+    font-size: 1.4rem;
+}
+
+.controls-con :nth-child(3) {
+    font-size: 2rem;
+}
+
+.controls-con :nth-child(4) {
+    font-size: 1.4rem;
+}
+.range{
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 20%;
+    margin: 0.3rem 0 0 0;
+}
+.range input{
+    height: 2px;
+    width: 50%;
+}
+.tools{
+    width: 25%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tools i{
+    margin-right: 1rem;
+}
+.tools input {
+    height: 2px;
+    width: 50%;
+}
+.tools :first-child{
+    font-size: 1.5rem;
+}
+.tools :nth-child(2){
+    font-size: 1.5rem;
+}
